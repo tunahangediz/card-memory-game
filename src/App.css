@@ -1,0 +1,119 @@
+.App {
+    background-color: #59aff1;
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background: tomato;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar a {
+    padding: 0.45rem;
+    margin: 0 0.25rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.content-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.content-between {
+    justify-content: space-between;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.mx-1 {
+    margin: 0 1rem;
+}
+.mx-2 {
+    margin: 0 2rem;
+}
+.mr-1 {
+    margin-right: 1rem;
+}
+.my-2 {
+    margin: 2rem 0;
+}
+
+.px-1 {
+    padding: 0 1rem;
+}
+
+.container {
+    max-width: 1300px;
+    display: block;
+    margin: 0 auto;
+}
+.rules {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(50%);
+    right: 50%;
+}
+
+.rules-wrapper {
+    background-color: rgba(11, 10, 10, 0.55);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(50%);
+    right: 50%;
+}
+
+.rules-btn {
+    position: relative;
+    left: 2rem;
+}
+
+.grid-9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.logo {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    .grid-9 {
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        gap: 2rem;
+    }
+    .logo {
+        display: flex;
+    }
+}
